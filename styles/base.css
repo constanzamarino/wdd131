@@ -6,7 +6,7 @@
 }
 
 :root{
-    --font: Georgia, 'Times New Roman', Times, serif;
+    --font: 'Merriweather' sans-serif;
     --radius-border: 5px;
     --background: pink;
     --color1: #fff5f7;
