@@ -154,15 +154,15 @@ main {
 
 figcaption{
     font-style: italic;
-    color: grey;
+    color: rgb(95, 94, 94);
 }
 
 footer{
     font-family: var(--font);
     font-weight: light;
     font-style: italic;
-    background-color: rgb(233, 83, 108);
-    color: var(--color1);
+    background-color: rgb(204, 74, 96);
+    color: white;
     font-size: 1.05rem;
     margin-top: 1rem;
 }
