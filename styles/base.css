@@ -65,6 +65,10 @@ header{
     height: 40px;
 }
 
+ul{
+    list-style: none;
+}
+
 h1, h2{
 font-family: var(--font);
 }
