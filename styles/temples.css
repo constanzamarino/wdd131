@@ -55,7 +55,7 @@
     padding: 10px 20px;
 }
 
-h1{
+main h1{
     font-family: var(--font);
     font-size: 1.5rem;
     text-align: center;
@@ -63,44 +63,35 @@ h1{
 }
 
 .main-grid{
-    min-width: 1200px;
-    margin: 12rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-    "figure1" "figure2" "figure3"
-    "figure4" "figure5" "figure6"
-    "figure7" "figure8" "figure9";
-    row-gap:2rem;
+    max-width: 1250px;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    margin: 0 auto;
+    justify-items: center;
+    align-items: center;
+
+}
+.main-grid img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--border-radius);
 }
 
-.main-grid .fig:nth-child(1){
-    grid-area:figure1};
+.main-grid figcaption{
+    font-family: var(--font);
+    text-align: center;
+    font-style:italic;
+}
 
-.main-grid .fig:nth-child(2){
-    grid-area:figure2};
+.main-grid figure:hover{
+    background-color: rgb(161, 10, 161);
+    color: var(--color);
+    border-radius: var(--border-radius);
+}
 
-.main-grid .fig:nth-child(3){
-    grid-area:figure3};
-
-.main-grid .fig:nth-child(4){
-    grid-area:figure4};
-
-.main-grid .fig:nth-child(5){
-    grid-area:figure5};
-
-.main-grid .fig:nth-child(6){
-    grid-area:figure6};
-
-.main-grid .fig:nth-child(7){
-    grid-area:figure7};
-
-.main-grid .fig:nth-child(8){
-    grid-area:figure8};
-
-.main-grid .fig:nth-child(9){
-    grid-area:figure9};
 
 
 footer{
