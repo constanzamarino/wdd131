@@ -84,6 +84,7 @@ main h1{
     font-family: var(--font);
     text-align: center;
     font-style:italic;
+    font-size: 0.8rem;
 }
 
 .main-grid figure:hover{
