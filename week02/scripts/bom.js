@@ -1,3 +1,5 @@
+
+
 const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
 const list = document.querySelector('______');
@@ -10,3 +12,7 @@ li.textContent = input.value;
 li.append(deleteButton);
 
 list.append(li);
+
+button.addEventListener('click', function(){
+
+});
