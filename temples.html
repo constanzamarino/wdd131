@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="W02 Assignment - Picture Album">
         <meta name="author" content="Constanza Mariño">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
         <title>Temple Album</title>
         <link rel="stylesheet" href="styles/temples.css">
         <link rel="stylesheet" href="styles/temples-large.css">
@@ -12,64 +15,67 @@
     </head>
     <body>
         <header>
-            <span id="header-title">Temple Album</span>
             <nav>
                 <ul class="navigation-menu">
-                    <li><a href="#"></a>Home</li>
-                    <li><a href="#"></a>Old</li>
-                    <li><a href="#"></a>New</li>
-                    <li><a href="#"></a>Large</li>
-                    <li><a href="#"></a>Small</li>
+                    <span id="header-title">Temple Album</span>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Old</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Large</a></li>
+                    <li><a href="#">Small</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <h1>Home</h1>
-            <figure>
+            <div class="main-grid">
+                <figure class="fig">
                 <img src="" alt="temple1">
                 <figcaption>A temple</figcaption>
-            </figure>
-            <figure>
+                </figure>
+            <figure class="fig">
                 <img src="" alt="temple2">
                 <figcaption>A temple</figcaption>
             </figure>
-            <figure>
+            <figure class="fig">
                 <img src="" alt="temple3">
                 <figcaption>A temple</figcaption>
             </figure>
-            <figure>
+            <figure class="fig">
                 <img src="" alt="temple4">
                 <figcaption> A temple</figcaption>
             </figure>
-            <figure>
+            <figure class="fig">
                 <img src="" alt="temple5">
                 <figcaption>A temple</figcaption>
             </figure>
-            <figure>
+            <figure class="fig">
                 <img src="" alt="temple6">
                 <figcaption>A temple</figcaption>
             </figure>
-            <figure>
+            <figure class="fig">
                 <img src="" alt="temple7">
                 <figcaption>A temple</figcaption>
             </figure>
-            <figure>
+            <figure class="fig">
                 <img src=""alt="temple8">
                 <figcaption>A temple</figcaption>
             </figure>
-            <figure>
+            <figure class="fig">
                 <img src="" alt="temple9">
                 <figcaption>A temple</figcaption>
             </figure>
-
+            </div>
         </main>
         <footer>
+            <div class="footer-cont">
             <p>
-                © <span id="currentYear"></span> | Constanza Mariño | Argentina
+                © <span id="currentYear"></span> | Constanza Mariño | Argentina - 
             </p>
             <p>
                 Last Modified: <span id="lastModified"></span> <span id="currentTime"></span>
             </p>
+            </div>
         </footer>
     </body>
 
