@@ -17,3 +17,14 @@ setInterval(function(){
 
     currentTime.textContent= ` ${hours}:${minutes}:${seconds}`;
 }, 1000);
+
+// Hamburger button for the nav menu 
+
+const nav= document.querySelector(".navigation-menu");
+const hambutton = document.querySelector("#menu");
+
+hambutton.addEventListener('click', () => {
+    nav.classList.toggle("show");
+    hambutton.classList.toggle("show");
+})
+
