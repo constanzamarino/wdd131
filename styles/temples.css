@@ -106,8 +106,10 @@ footer{
 }
 .footer-cont{
     display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 80px;
-    
+    gap: 5px;
+    text-align: center;
 }
