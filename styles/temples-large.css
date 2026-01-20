@@ -21,23 +21,6 @@
     padding-left: 1rem;
 }
 
-.navigation-menu{
-    display:flex;
-    align-items: center;
-    background-color: var(--background-color);
-    height: 60px;
-    padding: 0.1rem;
-    list-style: none;
-    
-}
-
-.navigation-menu li{
-    margin-left: 30px;
-    margin-right: 30px;
-    display: flex;
-    align-items: center;
-    font-weight:bold;
-}
 
 .navigation-menu a{
     text-decoration: none;
@@ -63,6 +46,26 @@ main h1{
 }
 
 @media (min-width: 780px){
+#menu{
+    display: none;
+}
+.navigation-menu{
+    display:flex;
+    align-items: center;
+    background-color: var(--background-color);
+    height: 60px;
+    padding: 0.1rem;
+    list-style: none;
+    
+}
+.navigation-menu li{
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    font-weight:bold;
+}
+
 .main-grid{
     max-width: 1250px;
     display:grid;
