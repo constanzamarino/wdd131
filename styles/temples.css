@@ -62,17 +62,19 @@ main h1{
     padding-top: 1.5rem;
 }
 
-.main-grid{
-    max-width: 1250px;
+ .main-grid{
+    
     display:grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: 2rem;
     padding: 2rem;
     margin: 0 auto;
     justify-items: center;
     align-items: center;
 
-}
+} 
+
+
 .main-grid img{
     max-width: 100%;
     height: auto;
