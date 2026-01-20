@@ -12,7 +12,6 @@
 
 
 #header-title{
-    display: block;
     font: var(--font);
     background-color: var(--background-color);
     color: var(--color);
@@ -23,7 +22,6 @@
 }
 
 #menu{
-    display: block;
     font-size: 2rem;
     font-weight: 600;
     text-decoration: none;
