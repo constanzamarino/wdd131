@@ -66,7 +66,7 @@ header {
     align-items: flex-end;
 }
 
-.navigation-menu li{
+.navigation-menu nav li{
     display: flex;
     align-items: center;
     font-weight:bold;
