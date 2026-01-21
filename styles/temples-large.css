@@ -48,19 +48,32 @@ main h1{
 @media (min-width: 780px){
     header {
         display: flex; 
+        flex-direction: row; 
         justify-content: space-between;
         align-items: center;
         padding: 0 2rem;
     }
-    #menu { display: none;}
+
+    #header-title {
+        margin: 0; 
+        padding: 1rem 0;
+    }
+
+    #menu {
+        display: none; 
+    }
+
     .navigation-menu {
         display: flex; 
         flex-direction: row;
-        height: auto;
+        gap: 1rem;
+        margin: 0;
     }
+
     .main-grid {
         grid-template-columns: repeat(3, 1fr);
         max-width: 1250px;
+        margin: 0 auto;
     }
 }
 

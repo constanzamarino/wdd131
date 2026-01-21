@@ -62,6 +62,7 @@ header {
 
 .navigation-menu.show{
     display: flex;
+    justify-content: flex-end;
 }
 
 .navigation-menu li{
