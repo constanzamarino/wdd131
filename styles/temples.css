@@ -10,6 +10,13 @@
     --border-radius: 5px;
 }
 
+header {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column; 
+    position: relative;
+    padding: 1rem;
+}
 
 #header-title{
     font: var(--font);
@@ -19,9 +26,12 @@
     font-weight: bold;
     margin-right: auto;
     padding: 1rem;
+    margin: 0;
+    text-align: left;
 }
 
 #menu{
+    display: block;
     font-size: 2rem;
     font-weight: 600;
     text-decoration: none;

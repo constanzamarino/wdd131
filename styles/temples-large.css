@@ -46,12 +46,17 @@ main h1{
 }
 
 @media (min-width: 780px){
+    header {
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+    }
     #menu { display: none;}
     .navigation-menu {
         display: flex; 
         flex-direction: row;
-        justify-content: flex-end;
-        height: 60px;
+        height: auto;
     }
     .main-grid {
         grid-template-columns: repeat(3, 1fr);
