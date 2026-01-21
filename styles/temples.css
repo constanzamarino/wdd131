@@ -57,12 +57,13 @@ header {
     list-style: none;
     background-color: var(--background-color);
     padding: 0;
+    width: 100%;
     
 }
 
 .navigation-menu.show{
     display: flex;
-    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .navigation-menu li{
@@ -79,7 +80,8 @@ header {
     color: var(--color);
     font-size: 1.05rem;
     padding: 10px 20px;
-    display:inline-block;
+    display: block;
+    text-align: right;
 }
 
 .navigation-menu a:hover{
