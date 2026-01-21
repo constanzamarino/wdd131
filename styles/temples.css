@@ -12,6 +12,7 @@
 
 header {
     background-color: var(--background-color);
+    color: var(--color);
     display: flex;
     flex-direction: column; 
     position: relative;
