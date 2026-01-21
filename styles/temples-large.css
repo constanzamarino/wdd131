@@ -1,49 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-}
 
-:root{
-    --font: 'Merriweather', sans-serif;
-    --color: rgb(255,255,255);
-    --background-color:rgb(161, 10, 161);
-    --border-radius: 5px;
-}
-
-
-#header-title{
-    font: var(--font);
-    background-color: var(--background-color);
-    color: var(--color);
-    font-size: 2rem;
-    font-weight: bold;
-    margin-right: auto;
-    padding-left: 1rem;
-}
-
-
-.navigation-menu a{
-    text-decoration: none;
-    background-color: var(--background-color);
-    font-family: var(--font);
-    color: var(--color);
-    font-size: 1.05rem;
-    padding: 10px 20px;
-    display:inline-block;
-}
-
-.navigation-menu a:hover{
-    background-color: rgb(122, 8, 122);
-    border-radius: var(--border-radius);
-    padding: 10px 20px;
-}
-
-main h1{
-    font-family: var(--font);
-    font-size: 1.5rem;
-    text-align: center;
-    padding-top: 1.5rem;
-}
 
 @media (min-width: 780px){
     header {
@@ -55,7 +10,7 @@ main h1{
     }
 
     #header-title {
-        margin: 0; 
+        margin: 0;
         padding: 1rem 0;
     }
 
@@ -66,54 +21,17 @@ main h1{
     .navigation-menu {
         display: flex; 
         flex-direction: row;
-        gap: 1rem;
         margin: 0;
     }
 
+    .navigation-menu li {
+        margin: 0 15px; 
+    }
+
     .main-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr); 
         max-width: 1250px;
-        margin: 0 auto;
+        margin: 2rem auto;
     }
 }
 
-.main-grid img{
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border-radius: var(--border-radius);
-}
-
-.main-grid figcaption{
-    font-family: var(--font);
-    text-align: center;
-    font-style:italic;
-    font-size: 0.8rem;
-}
-
-.main-grid figure:hover{
-    background-color: rgb(161, 10, 161);
-    color: var(--color);
-    border-radius: var(--border-radius);
-}
-
-
-
-footer{
-    background-color: var(--background-color);
-    color: var(--color);
-    font-family: var(--font);
-    font-size: 1rem;
-    font-style: italic;
-    font-weight: 300;
-    margin-top: 0.5rem;
-}
-.footer-cont{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-    gap: 5px;
-    text-align: center;
-}

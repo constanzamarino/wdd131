@@ -126,8 +126,6 @@ main h1{
     border-radius: var(--border-radius);
 }
 
-
-
 footer{
     background-color: var(--background-color);
     color: var(--color);
