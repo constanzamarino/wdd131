@@ -6,23 +6,26 @@
         <meta name="description" content="Week 03 Assignment: Country Page - BYU Idaho | Constanza Mariño ">
         <meta name="author" content="Constanza Mariño">
         <title>Uzbekistan</title>
-        <link rel="stylesheet" href="place.css">
-        <link rel="stylesheet" href="place-large.css">
+        <link rel="stylesheet" href="styles/place.css">
+        <link rel="stylesheet" href="styles/place-large.css">
         <script src="scripts/place.js" defer></script>
 
     </head> 
 <body>
-    <header>
-        <h1>Uzbekistan</h1> <img src="images/Emblem_of_Uzbekistan.svg" alt="uzbekistan-emblem" width="130">
-        
+    <header class="header-container">
+        <h1>Uzbekistan</h1> 
+        <img src="images/Emblem_of_Uzbekistan.svg" alt="uzbekistan-emblem" width="70">
     </header>
-    <main>
-        <picture>
-        <source srcset="" alt="hero-image" media="(min-width:)">
+    <main class="main-container">
+        <picture class="picture-container">
+        <source srcset="images/uzbek-view_1.webp" alt="hero-image-large" media="(min-width: 1200px)">
+        <source srcset="images/registan-square-view.webp" alt="hero-image-small" media="(min-width: 750px)">
         </picture>
-        <section>
+        <section class="data-section">
             <h2>Data</h2>
             <img src="images/Flag_of_Uzbekistan.svg" alt="uzbekistan-flag" width="200">
+
+            <div class="section-text">
             <p>Location: Central Asia</p>
             <p>Area: 448,978 km²</p>
             <p>Population: 37,724,223</p>
@@ -32,17 +35,20 @@
             <p>Time Zone: UTC+05:00</p>
             <p>Calling Code: +988 </p>
             <p>Internet TLD: .uz</p>
+            </div>
+
         </section>
-        <section>
-            <h2>Weather</h2>
-            <img src="" alt="weather-image">
+        <section class="weather-section">
+            <h2>Weather</h2> <img src="" alt="weather-image">
+            <div class="section-text">
             <p>Temperature: °C</p>
             <p>Conditions:</p>
             <p>Wind: km/h</p>
             <p>Wind Chill: °C</p>
+            </div>
         </section>
     </main>
-<footer>
+<footer class="footer-container">
     <p>© <span id="currentYear"></span> | Constanza Mariño | Argentina</p>
     <p>Last Modified: <span id="lastModified"></span> - <span id="currentTime"></span></p>
 </footer>
