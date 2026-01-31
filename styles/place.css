@@ -73,7 +73,6 @@ h1{
     width: var(--section-width);
     box-shadow: 3px 3px 3px 3px rgba(128,128,128, 0.45);
     margin: 1rem 0;
-    width: 90%;
 }
 .data-section {
     order: 2;
