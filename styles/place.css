@@ -43,6 +43,14 @@ h1{
     gap: 2rem;
     margin: 1rem;
 }
+
+.picture-container{
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    object-fit: cover;
+}
+
 .hero-img{
     width: 100%;
     height: auto;
@@ -60,6 +68,11 @@ h1{
     border-radius: var(--border-radius);
     width: var(--section-width);
     box-shadow: 3px 3px 3px 3px rgba(128,128,128, 0.45);
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 10;
+    margin: 1rem 0;
+    width: 90%;
 }
 
 .data-section h2, .weather-section h2 {
