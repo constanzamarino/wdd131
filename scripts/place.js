@@ -1,10 +1,23 @@
 
+//Wind chill calculation (weather section)
 
+const temperature = 6;
+const windSpeed = 10;
 
+function calculateWindChill (temperature, windSpeed){
+    let windChill = 13.12 + (0.61215 * temperature) - (11.37 * Math.pow(windSpeed, 0.16)) + (0.3965 * temperature * Math.pow(windSpeed, 0.16));
+    if(temperature <= 10 && windSpeed > 4.8){
+        return windChill.toFixed(2);
+    } else{
+        return `${"N/A"}`
+    }
 
+}
 
-
-
+const windChillElement = document.getElementById("windChillValue");
+if (windChillElement) {
+    windChillElement.textContent = calculateWindChill(temperature, windSpeed);
+}
 
 
 //Current date and time (footer)
