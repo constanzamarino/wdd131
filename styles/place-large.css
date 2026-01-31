@@ -1,4 +1,12 @@
 @media(min-width: 1200px){
+    h1{
+        font-size: 2.5rem;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+    
     .main-container{
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -21,6 +29,7 @@
         z-index: 10;
         align-self: start;
         margin-top: 50px;
+        width: 500px;
 
     }
 
@@ -31,6 +40,11 @@
         z-index: 10;
         margin-bottom: 50px;
         margin-right: 40px;
+        width: 500px;
+    }
+
+    footer{
+        font-size: 1.2rem;
     }
     
 }
