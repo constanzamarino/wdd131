@@ -4,12 +4,12 @@
 }
 
 :root{
-    --font: ;
+    --font:'Fjalla One', sans-serif ;
     --color: rgb(255,255,255);
     --border-color: 3px solid rgb(218, 41, 28);
     --color2: rgb(0,0,0);
     --border-radius: 5px;
-    --section-width: 900px;
+    --section-width: 500px;
     
 }
 
@@ -18,7 +18,12 @@ header{
     border-bottom: var(--border-color);
     color: var(--color);
     text-align: center;
-    font-size: 1.5rem;
+}
+
+h1{
+    font-weight: 400;
+    font-family: var(--font);
+    font-size: 2.5rem;
 }
 .header-container{
     display: flex;
@@ -38,7 +43,11 @@ header{
     gap: 2rem;
     margin: 1rem;
 }
-
+.hero-img{
+    width: 100%;
+    height: auto;
+    display:block;
+}
 
 .data-section, .weather-section{
     display: grid;
@@ -46,7 +55,7 @@ header{
     align-items: center;
     gap: 1rem;
     padding: 1rem;
-    background-color: rgba(211, 211, 211, 0.568);
+    background-color: rgba(211, 211, 211, 0.8);
     color: rgb(--color2);
     border-radius: var(--border-radius);
     width: var(--section-width);
@@ -70,6 +79,9 @@ h2{
     width: 100%; 
     box-sizing: border-box;
     color: var(--color);
+    font-family: var(--font);
+    font-weight: 200;
+    font-size: 2rem;
 }
 
 .data-section h2:hover{
@@ -90,4 +102,5 @@ footer{
     border-top: var(--border-color);
     text-align: center;
     padding: 1rem;
+    font-family: var(--font);
 }

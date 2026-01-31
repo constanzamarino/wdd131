@@ -1,0 +1,41 @@
+@media(min-width: 1200px){
+    .main-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    }
+
+    .picture-container{
+        grid-column: 1 / -1;
+        grid-row: 1;
+        width: 100%;
+    }
+
+    .data-section{
+        grid-column: 1;
+        grid-row: 1;
+        z-index: 10;
+        align-self: start;
+        margin-top: 50px;
+
+    }
+
+    .weather-section{
+        grid-column: 2;
+        grid-row: 1; 
+        align-self: end;
+        z-index: 10;
+        margin-bottom: 50px;
+        margin-right: 40px;
+    }
+    
+}
+
+    
+
+
+    
