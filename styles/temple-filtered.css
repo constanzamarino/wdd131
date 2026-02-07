@@ -98,7 +98,7 @@ main h1{
     padding-top: 1.5rem;
 }
 
- /* Update the grid to handle the dynamic content */
+ 
 .main-grid {
     display: grid;
     grid-template-columns: 1fr;

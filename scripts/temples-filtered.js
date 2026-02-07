@@ -93,7 +93,7 @@ const temples = [
     location: "Sapporo, Hokkaido, Japan",
     dedicated: "2016, August, 21",
     area: 48480,
-    imageUrl:"https://churchofjesuschristtemples.org/sapporo-japan-temple/photographs/"
+    imageUrl:"https://churchofjesuschristtemples.org/assets/img/temples/sapporo-japan-temple/sapporo-japan-temple-3374-main.jpg"
   },
 
   {
@@ -136,7 +136,7 @@ function displayTemples(filteredTemples){
 
     });
 
-}
+};
 
 displayTemples(temples);
 
