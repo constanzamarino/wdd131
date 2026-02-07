@@ -160,6 +160,11 @@ main h1{
 }
 
 
+.navigation-menu a:active {
+    background-color: #fff;
+    color: var(--background-color);
+}
+
 footer{
     background-color: var(--background-color);
     color: var(--color);

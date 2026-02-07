@@ -139,3 +139,54 @@ function displayTemples(filteredTemples){
 }
 
 displayTemples(temples);
+
+//Filtering for the nav menu
+
+const navLinks = document.querySelectorAll(".navigation-menu a");
+const mainHeading = document.querySelector("main h1");
+
+navLinks.forEach(link => {
+    link.addEventListener("click", (event) => {
+        event.preventDefault(); 
+        const filter = event.target.textContent;
+        mainHeading.textContent = filter; 
+
+        let filteredList = [];
+
+        switch (filter) {
+            case "Old":
+                
+                filteredList = temples.filter(temple => {
+                    const year = parseInt(temple.dedicated.split(",")[0]);
+                    return year < 1900;
+                });
+                break;
+            case "New":
+                
+                filteredList = temples.filter(temple => {
+                    const year = parseInt(temple.dedicated.split(",")[0]);
+                    return year > 2000;
+                });
+                break;
+            case "Large":
+                
+                filteredList = temples.filter(temple => temple.area > 90000);
+                break;
+            case "Small":
+
+                filteredList = temples.filter(temple => temple.area < 10000);
+                break;
+            case "Home":
+            default:
+                filteredList = temples;
+                break;
+        }
+
+        displayTemples(filteredList);
+        
+        if (nav.classList.contains("show")) {
+            nav.classList.toggle("show");
+            hambutton.classList.toggle("show");
+        }
+    });
+});
