@@ -1,0 +1,36 @@
+@media (min-width: 780px){
+    header {
+        display: flex; 
+        flex-direction: row; 
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+        color: rgb(255,255,255);
+    }
+
+    #header-title {
+        margin: 0;
+        padding: 1rem 0;
+    }
+
+    #menu {
+        display: none; 
+    }
+
+    .navigation-menu {
+        display: flex; 
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .navigation-menu li {
+        margin: 0 15px; 
+    }
+
+    .main-grid {
+        grid-template-columns: repeat(3, 1fr); 
+        max-width: 1250px;
+        margin: 2rem auto;
+    }
+}
+
