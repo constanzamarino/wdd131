@@ -98,37 +98,67 @@ main h1{
     padding-top: 1.5rem;
 }
 
- .main-grid{
-    display:grid;
+ /* Update the grid to handle the dynamic content */
+.main-grid {
+    display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
     padding: 2rem;
+    max-width: 1200px;
     margin: 0 auto;
-    justify-items: center;
-    align-items: center;
-
-} 
+}
 
 
-.main-grid img{
+.temple-card {
+    background-color: rgb(249, 249, 249); 
+    border: 1px solid rgb(221, 221, 221);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.temple-card h3 {
+    font-family: var(--font);
+    color: var(--background-color);
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    padding-bottom: 0.3rem;
+}
+
+.temple-card p {
+    font-family: var(--font);
+    font-size: 0.9rem;
+    margin: 0.3rem 0;
+    line-height: 1.4;
+}
+
+.temple-card strong {
+    color: rgb(51, 51, 51);
+}
+
+.main-grid img {
     max-width: 100%;
     height: auto;
     display: block;
-    border-radius: var(--border-radius);
+    margin-top: 1rem;
+    border-radius: 3px;
+    aspect-ratio: 400 / 250; 
+    object-fit: cover;
 }
 
-.main-grid figcaption{
-    font-family: var(--font);
-    text-align: center;
-    font-style:italic;
-    font-size: 0.8rem;
-}
-
-.main-grid figure:hover{
-    background-color: rgb(161, 10, 161);
+.main-grid figure:hover {
+    background-color: var(--background-color);
     color: var(--color);
-    border-radius: var(--border-radius);
+    transform: scale(1.02);
 }
+
+.main-grid figure:hover h3,
+.main-grid figure:hover p,
+.main-grid figure:hover strong {
+    color: var(--color);
+}
+
 
 footer{
     background-color: var(--background-color);

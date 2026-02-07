@@ -28,9 +28,9 @@
     }
 
     .main-grid {
-        grid-template-columns: repeat(3, 1fr); 
         max-width: 1250px;
         margin: 2rem auto;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     }
 }
 

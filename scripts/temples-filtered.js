@@ -112,3 +112,30 @@ const temples = [
     imageUrl:"https://churchofjesuschristtemples.org/assets/img/temples/bangkok-thailand-temple/bangkok-thailand-temple-40037-main.jpg"
   },
 ];
+
+//Loop to display the temple cards
+
+function displayTemples(filteredTemples){
+    const container = document.querySelector(".main-grid");
+    container.innerHTML = "";
+    filteredTemples.forEach(temple => {
+        const card= document.createElement("figure");
+        card.classList.add("temple-card");
+
+        card.innerHTML = `<h3>${temple.templeName}</h3>
+            <p><strong>Location:</strong> ${temple.location}</p>
+            <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
+            <p><strong>Area:</strong> ${temple.area.toLocaleString()} sq ft</p>
+            <img src="${temple.imageUrl}" 
+                 alt="${temple.templeName} Temple" 
+                 loading="lazy" 
+                 width="400" 
+                 height="250">
+         `;
+        container.appendChild(card);
+
+    });
+
+}
+
+displayTemples(temples);
