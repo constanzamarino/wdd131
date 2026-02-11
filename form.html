@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Week 05 Assignment - Product Review Form - BYU Idaho | Constanza Mariño ">
+        <meta name="author" content="Constanza Mariño">
+        <title>Product Review Form</title>
+        <link rel="stylesheet" href="styles/form.css">
+        <script src="scripts/form.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Product Review</h1>
+        </header>
+        <main>
+            <form>
+                <!--To choose the product-->
+                <label for="product-choice">Product Name</label>
+                <select id="product-choice" name="product-choice"><br>
+                <option value="" disabled selected>Select a Product...</option>
+                <option value="product1">Product 1</option>
+                <option value="product2">Product 2</option>
+
+                <!--To rate the product-->
+
+                <fieldset>
+                <legend>Overall Rating</legend><br>
+                <input type="radio" id="⭐" name="star-rating" value="⭐">
+                <label for="⭐">⭐</label><br>
+
+                <input type="radio" id="⭐⭐" name="star-rating" value="⭐⭐">
+                <label for="⭐⭐">⭐⭐</label><br>
+
+                <input type="radio" id="⭐⭐⭐" name="star-rating" value="⭐⭐⭐">
+                <label for="⭐⭐⭐">⭐⭐⭐</label><br>
+
+                <input type="radio" id="⭐⭐⭐⭐" name="star-rating" value="⭐⭐⭐⭐">
+                <label for="⭐⭐⭐⭐">⭐⭐⭐⭐</label><br>
+
+                <input type="radio" id="⭐⭐⭐⭐⭐" name="star-rating" value="⭐⭐⭐⭐⭐">
+                <label for="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</label><br>
+                </fieldset>
+
+                <!--To select de date of installation-->
+
+                <label for="installation-date">Date of Installation</label>
+                <input type="date" id="installation-date" name="installation-date">
+
+                <!--To select features that apply for the user-->
+                <fieldset>
+                <legend>Which features do you find useful in the product? (Check all that apply)</legend>
+                <input type="checkbox" id="durability" name="feature-checkbox" value="durability">
+                <label for="durability">Durability</label><br>
+
+                <input type="checkbox" id="ease-of-use" name="feature-checkbox" value="ease-of-use">
+                <label for="ease-of-use">Ease of use</label><br>
+
+                <input type="checkbox" id="performance" name="feature-checkbox" value="performance">
+                <label for="performance">Performance</label><br>
+
+                <input type="checkbox" id="design" name="feature-checkbox" value="design">
+                <label for="design">Design</label><br>
+                
+                </fieldset>
+
+                <!--To write a review-->
+
+                <label for="written-review">Written Review (Optional)</label>
+                <textarea id="written-review" name="written-review" rows="5"></textarea>
+
+                <!--For the user to write their name-->
+
+                <label for="user-text-name">Your Name (Optional)</label>
+                <input type="text" id="user-text-name" name="user-text-name">
+
+                <!--A button to post the review-->
+                <input type="submit" value="Post Review">
+            </form>
+        </main>
+        <footer>
+            <p>© <span id="currentYear"></span> | Constanza Mariño | Argentina</p>
+            <p>Last Modified: <span id="lastModified"></span> - <span id="currentTime"></span></p>
+        </footer>
+    </body>
+</html>
