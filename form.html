@@ -15,7 +15,7 @@
             <h1>Product Review</h1>
         </header>
         <main>
-            <form>
+            <form action="review.html" method="get">
                 <!--To choose the product-->
                 <label for="product-choice">Product Name</label>
                 <select id="product-choice" name="product-choice"><br>
@@ -27,21 +27,33 @@
                 <!--To rate the product-->
 
                 <fieldset>
-                <legend>Overall Rating</legend><br>
-                <input type="radio" id="star1" name="star-rating" value="1">
-                <label for="star1">⭐</label><br>
+                <legend>Overall Rating</legend>
+                <div class="form-rating">
+                    <div class="star-group">
+                    <label for="star1">⭐</label>
+                    <input type="radio" id="star1"name="star-rating" value="1"> 
+                    </div>
 
-                <input type="radio" id="star2" name="star-rating" value="2">
-                <label for="star2">⭐⭐</label><br>
+                    <div class="star-group">
+                    <label for="star2">⭐⭐</label>
+                    <input type="radio" id="star2"name="star-rating" value="2">
+                    </div>
 
-                <input type="radio" id="star3" name="star-rating" value="3">
-                <label for="star3">⭐⭐⭐</label><br>
+                    <div class="star-group">
+                    <label for="star3">⭐⭐⭐</label>
+                    <input type="radio" id="star3"name="star-rating" value="3">
+                    </div>
 
-                <input type="radio" id="star4" name="star-rating" value="4">
-                <label for="star4">⭐⭐⭐⭐</label><br>
-
-                <input type="radio" id="star5" name="star-rating" value="5">
-                <label for="star5">⭐⭐⭐⭐⭐</label><br>
+                    <div class="star-group">
+                    <label for="star4">⭐⭐⭐⭐</label>
+                    <input type="radio" id="star4"name="star-rating" value="4">
+                    </div>
+                    
+                    <div class="star-group">
+                    <label for="star5">⭐⭐⭐⭐⭐</label>
+                    <input type="radio" id="star5"name="star-rating" value="5">
+                    </div>    
+                </div>
                 </fieldset>
 
                 <!--To select de date of installation-->
@@ -51,17 +63,30 @@
                 <!--To select features that apply for the user-->
                 <fieldset>
                 <legend>Which features do you find useful in the product? (Check all that apply)</legend>
-                <input type="checkbox" id="durability" name="feature-checkbox" value="durability">
-                <label for="durability">Durability</label><br>
 
-                <input type="checkbox" id="ease-of-use" name="feature-checkbox" value="ease-of-use">
-                <label for="ease-of-use">Ease of use</label><br>
+                <div class="feature-selection">
 
-                <input type="checkbox" id="performance" name="feature-checkbox" value="performance">
-                <label for="performance">Performance</label><br>
+                    <div class="feature-item">
+                        <input type="checkbox" id="durability" name="feature-checkbox" value="durability">
+                        <label for="durability">Durability</label>
+                    </div>
 
-                <input type="checkbox" id="design" name="feature-checkbox" value="design">
-                <label for="design">Design</label><br>
+                    <div class="feature-item">
+                        <input type="checkbox" id="ease-of-use" name="feature-checkbox" value="ease-of-use">
+                        <label for="ease-of-use">Ease of use</label>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <input type="checkbox" id="performance" name="feature-checkbox" value="performance">
+                        <label for="performance">Performance</label>
+                    </div>
+
+                    <div class="feature-item">
+                        <input type="checkbox" id="design" name="feature-checkbox" value="design">
+                        <label for="design">Design</label>
+                    </div>
+
+                </div>
                 
                 </fieldset>
 
