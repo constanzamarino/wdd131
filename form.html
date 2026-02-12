@@ -22,15 +22,13 @@
         </header>
         <main>
             <form action="review.html" method="get">
-                <!--To choose the product-->
+                
                 <label for="product-choice">Product Name</label>
                 <select id="product-choice" name="product-choice"><br>
                 <option value="" disabled selected>Select a Product...</option>
                 <option value="product1">Product 1</option>
                 <option value="product2">Product 2</option>
                 </select>
-
-                <!--To rate the product-->
 
                 <fieldset>
                 <legend>Overall Rating</legend>
@@ -62,11 +60,9 @@
                 </div>
                 </fieldset>
 
-                <!--To select de date of installation-->
                 <label for="installation-date">Date of Installation</label>
                 <input type="date" id="installation-date" name="installation-date">
 
-                <!--To select features that apply for the user-->
                 <fieldset>
                 <legend>Which features do you find useful in the product? (Check all that apply)</legend>
 
@@ -96,17 +92,14 @@
                 
                 </fieldset>
 
-                <!--To write a review-->
-
                 <label for="written-review">Written Review (Optional)</label>
                 <textarea id="written-review" name="written-review" rows="5"></textarea>
 
-                <!--For the user to write their name-->
 
                 <label for="user-text-name">Your Name (Optional)</label>
                 <input type="text" id="user-text-name" name="user-text-name">
 
-                <!--A button to post the review-->
+                
                 <input type="submit" value="Post Review">
             </form>
         </main>
