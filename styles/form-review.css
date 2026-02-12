@@ -1,51 +1,58 @@
 
-
-html, body{
+html, body {
     height: 100%;
     margin: 0;
-
 }
+
 body {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
+    min-height: 100vh; 
     font-family: 'Fira Sans Condensed', sans-serif;
 }
 
 main {
     flex: 1; 
     display: flex;
-    justify-content: center; 
-    align-items: center;     
+    justify-content: center;
+    align-items: center;
 }
+
+header, form, footer{
+    width: 90%;
+    max-width: 450px;
+    margin: 2rem auto;
+
+}
+
 
 header{
     background-color: rgb(230, 100, 119);
-    margin: 0 auto;
     padding: 0.5rem;
-    width: 700px;
     border-radius: 6px;
     
 }
 
 
 h1{
-    margin: 0.5rem;
-    font-size: 2.7rem;
+    font-size: 2.3rem;
     text-align: center;
-    color: rgb(255, 255, 255); 
+    color: rgb(255, 255, 255);  
     font-family: 'Boogaloo', sans-serif;
     font-weight: light;
 }
 
 section{
-    width: 700px;
-    margin: 0.5rem auto;
+    width: 440px;
+    height: 300px;
     padding: 1rem;
     border-radius: 6px;
     display: grid;
     justify-items: center;
+    align-items: center;
     background-color: rgb(235, 228, 228);
 } 
+
 
 h2, p{
     font-family:'Fira Sans Condensed', sans-serif;
@@ -61,8 +68,14 @@ p{
 footer{
     font-family:'Fira Sans Condensed', sans-serif;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     background-color: rgb(230, 100, 119);
     color: rgb(255,255,255);
+    border-radius: 6px;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto; 
+    margin-top: auto; 
+    padding: 1rem;
 
 }
