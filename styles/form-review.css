@@ -1,6 +1,5 @@
 header{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: var(--background-color);
+    background-color: rgb(230, 100, 119);
     margin: 0 auto;
     padding: 0.5rem;
     width: 700px;
@@ -10,13 +9,25 @@ header{
 
 h1{
     margin: 0.5rem;
-    font-size: 2rem;
+    font-size: 2.7rem;
     text-align: center;
     color: rgb(255, 255, 255); 
+    font-family: 'Boogaloo', sans-serif;
+    font-weight: light;
+}
+
+h2{
+    width: 500px;
+    margin: 0.5rem auto;
+    padding: 1rem;
+    border-radius: 6px;
+    display: grid;
+    background-color: rgb(223, 218, 218);
+    
 }
 
 footer{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'Fira Sans Condensed', sans-serif;
     text-align: center;
     font-size: 1.1rem;
     background-color: var(--background-color);
