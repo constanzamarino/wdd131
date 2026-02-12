@@ -37,6 +37,17 @@ products.forEach(product => {
     productSelect.appendChild(option);
 });
 
+// To store and track the number of reviews completed
+
+document.addEventListener("DOMContentLoaded", () => {
+    let reviewCount = Number(window.localStorage.getItem("reviewCount-ls")) || 0;
+    reviewCount++;
+    window.localStorage.setItem("reviewCount-ls", reviewCount);
+    const displayCount = document.querySelector("#review-display");
+    if (displayCount) {
+        displayCount.textContent = `Total reviews submitted: ${reviewCount}`;
+    }
+});
 
 
 //Footer with the current year + last modified date + current time
