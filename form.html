@@ -24,10 +24,8 @@
             <form action="review.html" method="get">
                 
                 <label for="product-choice">Product Name</label>
-                <select id="product-choice" name="product-choice"><br>
+                <select id="product-choice" name="product-choice" required><br>
                 <option value="" disabled selected>Select a Product...</option>
-                <option value="product1">Product 1</option>
-                <option value="product2">Product 2</option>
                 </select>
 
                 <fieldset>
@@ -35,33 +33,33 @@
                 <div class="form-rating">
                     <div class="star-group">
                     <label for="star1">⭐</label>
-                    <input type="radio" id="star1"name="star-rating" value="1"> 
+                    <input type="radio" id="star1"name="star-rating" value="1" required> 
                     </div>
 
                     <div class="star-group">
                     <label for="star2">⭐⭐</label>
-                    <input type="radio" id="star2"name="star-rating" value="2">
+                    <input type="radio" id="star2"name="star-rating" value="2" required>
                     </div>
 
                     <div class="star-group">
                     <label for="star3">⭐⭐⭐</label>
-                    <input type="radio" id="star3"name="star-rating" value="3">
+                    <input type="radio" id="star3"name="star-rating" value="3" required>
                     </div>
 
                     <div class="star-group">
                     <label for="star4">⭐⭐⭐⭐</label>
-                    <input type="radio" id="star4"name="star-rating" value="4">
+                    <input type="radio" id="star4"name="star-rating" value="4"required>
                     </div>
                     
                     <div class="star-group">
                     <label for="star5">⭐⭐⭐⭐⭐</label>
-                    <input type="radio" id="star5"name="star-rating" value="5">
+                    <input type="radio" id="star5"name="star-rating" value="5"required>
                     </div>    
                 </div>
                 </fieldset>
 
                 <label for="installation-date">Date of Installation</label>
-                <input type="date" id="installation-date" name="installation-date">
+                <input type="date" id="installation-date" name="installation-date" required>
 
                 <fieldset>
                 <legend>Which features do you find useful in the product? (Check all that apply)</legend>
