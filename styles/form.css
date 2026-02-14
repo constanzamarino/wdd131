@@ -71,7 +71,7 @@ label, legend{
     font-style: italic;
     font-weight: 450;
     font-family: var(--body-font);
-    color: black;
+    color: rgb(0,0,0);
 }
 
 .feature-item {
