@@ -40,6 +40,7 @@ form{
     border-radius: 6px;
     display: flex;    
     flex-direction: column; 
+    align-items: flex-start;
     background-color: rgb(223, 218, 218);
     overflow: hidden; 
 }
@@ -122,11 +123,18 @@ input, select, textarea{
 }
 input[type="text"],
 input[type="date"],
-select,
+select{
+    width: 100%;          
+    max-width: 250px;     
+    margin: 0.2rem 0 1rem 0; 
+    align-self: flex-start;
+}
+
+
 textarea{
     width: 100%;
-    margin: 0.5rem 0;
-    box-sizing: border-box;
+    max-width: 100%; 
+    margin: 0.2rem 0 1rem 0;
 }
 
 input[type="date"]{
