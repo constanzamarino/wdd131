@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Week 06 Website Project - Around The World Plan Your Trip Form Page - BYU Idaho | Constanza Mariño ">
+        <meta name="author" content="Constanza Mariño">
+        <title>Plan Your Trip - Page</title>
+        <link rel="stylesheet" href="project-styles/plan-your-trip.css">
+        <link rel="stylesheet" href="project-styles/plan-your-trip-large.css">
+        <script src="project-scripts/plan-your-trip.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <img src="" alt="logo-image">
+            <h1>Around The World</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Plan Your Trip</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form action="" method="get">
+                
+                <label for="trip-type">What's your type of trip?</label>
+                <select id="trip-type" name="trip-type" required>
+                <option value="" disabled selected>Select...</option>
+                </select>
+
+                <fieldset>
+                <legend>What about your budget?</legend>
+                <div class="budget">
+                    <div class="budget-pref">
+                    <label for="budget1"></label>
+                    <input type="radio" id=budget1"" name="budget-element" value="1" required> 
+                    </div>
+            
+                    <div class="budget-pref">
+                    <label for="budget2"></label>
+                    <input type="radio" id="budget2" name="budget-element" value="2" required> 
+                
+                
+                    <div class="budget-pref">
+                    <label for="budget3"></label>
+                    <input type="radio" id="budget3" name="budget-element" value="3" required> 
+                    
+                
+                    <div class=budget-pref"">
+                    <label for="budget4"></label>
+                    <input type="radio" id="budget4" name="budget-element" value="4" required> 
+                </div>
+
+                </fieldset>
+
+                <label for="trip-date">Trip Date</label>
+                <input type="date" id="trip-date" name="trip-date" required>
+
+                <fieldset>
+                <legend>Which are your trip preferences? (Check all that apply)</legend>
+
+                <div class="preferences">
+
+                    <div class="preference-item">
+                        <input type="checkbox" id="" name="" value="">
+                        <label for="preference1"></label>
+                    </div>   
+                    <div class="preference-item">
+                        <input type="checkbox" id="" name="" value="">
+                        <label for="preference2"></label>
+                    </div>   
+                    <div class="preference-item">
+                        <input type="checkbox" id="" name="" value="">
+                        <label for="preference3"></label>
+                    </div>   
+                    <div class="preference-item">
+                        <input type="checkbox" id="" name="" value="">
+                        <label for="preference4"></label>
+                    </div>   
+                </div>
+                
+                </fieldset>
+
+                <label for="additional-pref">Additional Preferences (Optional)</label>
+                <textarea id="additional-pref" name="additional-pref" rows="10"></textarea>
+
+
+                <label for="user-gmail">Your gmail</label>
+                <input type="text" id="user-gmail" name="user-gmail" required>
+
+                
+                <input type="submit" value="">
+            </form>
+        </main>
+        <footer>
+            <p>A footer</p>
+            <!--Probably I will add the current date with js, need an span element with id in here-->
+            <img src="" alt="instagram-logo">
+            <img src="" alt="facebook-logo">
+            <img src="" alt="twitter-logo">
+        </footer>
+    </body>
+</html> <!--Probably I will reorder the form-->
