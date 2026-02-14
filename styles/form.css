@@ -125,7 +125,7 @@ input[type="text"],
 input[type="date"],
 select{
     width: 100%;          
-    max-width: 250px;     
+    max-width: 500px;     
     margin: 0.2rem 0 1rem 0; 
     align-self: flex-start;
 }
