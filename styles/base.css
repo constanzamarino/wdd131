@@ -42,7 +42,7 @@ header{
 
 
 .navigation a {
-    text-decoration: none;
+    list-style: none;
     color: rgb(0,0,0);
     font-family: var(--font);
     font-weight: bold;
