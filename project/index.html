@@ -24,9 +24,9 @@
             </div>
             <nav>
                 <ul class="nav-menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Destinations</a></li>
-                    <li><a href="#">Plan Your Trip</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="plan-your-trip.html">Plan Your Trip</a></li>
                 </ul>
             </nav>
         </header>
@@ -41,23 +41,26 @@
             
 
             <section class="recommmended-section">
-            <div class="recommended-destination">
             <h2 id="destination-rec-title">Recommended destination</h2>
+            <div class="recommended-destination-card"></div>
             </div>
             </section>
-            <!--Probably will make this section a class or something, so that from js it generates 3 random destinations from the array through a loop in this part of the website-->
-            
             
         </main>
         <footer>
-            <p>A footer</p>
-            <!--Probably I will add the current date with js, need an span element with id in here-->
-            <div class="social-media-links">
-            <a href="#"></a><img src="project-images/ig-icon.png" alt="instagram" width="50" height="50">
-            <a href="#"></a><img src="project-images/facebook-icon.png" alt="facebook" width="50" height="50">
-            <a href="#"></a><img src="project-images/twitter-iconn.png" alt="twitter-logo" width="80" height="80">
+            <div class="footer-text">
+            <p>© <span id="currentYear"></span> ✈ Around The World ✈ Constanza Mariño</p>
+            </div>
 
-            <!--Fix the logos size-->
+            <div class="date-content">
+                <p><span id="lastModified"></span> - <span id="currentTime"></span></p>
+            </div>
+
+            <div class="social-media-links">
+            <a href="www.instagram.com"></a><img src="project-images/ig-logo1.png" alt="instagram">
+            <a href="www.facebook.com"></a><img src="project-images/fb-logo.png" alt="facebook">
+            <a href="x.com"></a><img src="project-images/twitter-iconn.png" alt="twitter-logo">
+
             </div>
             
         </footer>

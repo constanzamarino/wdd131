@@ -6,19 +6,27 @@
         <meta name="description" content="Week 06 Website Project - Around the World Destination Page - BYU Idaho | Constanza Mariño">
         <meta name="author" content="Constanza Mariño">
         <title>Around The World - Destinations</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="project-styles/destinations.css">
         <link rel="stylesheet" href="project-styles/destinations-large.css">
         <script src="project-scripts/destinations.js" defer></script>
     </head>
     <body>
         <header>
-            <img src="" alt="">
+            <div class="logo-box">
+            <img src="project-images/logo-imagee.png" alt="logo-image" width="105">
             <h1>Around The World</h1>
+            </div>
             <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Destinations</a></li>
-                    <li><a href="#">Plan Your Trip</a></li>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="plan-your-trip.html">Plan Your Trip</a></li>
                 </ul>
             </nav>
         </header>
@@ -27,11 +35,20 @@
             <div class="destination-section"></div>    
         </main>
         <footer>
-            <p>A footer</p>
-            <!--Probably I will add the current date with js, need an span element with id in here-->
-            <img src="" alt="instagram-logo">
-            <img src="" alt="facebook-logo">
-            <img src="" alt="twitter-logo">
+            <div class="footer-text">
+            <p>© <span id="currentYear"></span> ✈ Around The World ✈ Constanza Mariño</p>
+            </div>
+
+            <div class="date-content">
+                <p><span id="lastModified"></span> - <span id="currentTime"></span></p>
+            </div>
+
+            <div class="social-media-links">
+            <a href="www.instagram.com"></a><img src="project-images/ig-logo1.png" alt="instagram">
+            <a href="www.facebook.com"></a><img src="project-images/fb-logo.png" alt="facebook">
+            <a href="x.com"></a><img src="project-images/twitter-iconn.png" alt="twitter-logo">
+
+            </div>
         </footer>
     </body>
 </html>
