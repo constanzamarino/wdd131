@@ -28,7 +28,8 @@ header{
     color: var(--third-color);
     justify-content: space-between;
     align-items: center;
-    padding: 0 60px;
+    padding: 0 20px; 
+    height: 80px;
 
 }
 
@@ -40,7 +41,7 @@ header{
     height: auto;
     width: 200px;
     position: absolute; 
-    top: 100%; 
+    top: 80px; 
     right: 0;
     left: auto;
     background-color: var(--main-color);
@@ -55,7 +56,7 @@ header{
 #menu {
     display: block;
     font-size: 2rem;
-    background: none;
+    background: transparent;
     border: none;
     color: var(--secondary-color);
     cursor: pointer;
@@ -154,9 +155,8 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     padding: 0.5rem 1rem;
-    position: relative;
-   
 
 }
 
@@ -177,16 +177,30 @@ footer p{
 
 
 .footer-text{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
+    position: static;
+    transform: none;
+    order: 1;
+}
+
+.date-content{
+    order: 2;
+}
+
+.social-media-links{
+    display: flex;
+    gap: 15px;
+    margin: 0 auto;
+    align-items: center;
+    order: 3;
+    cursor: pointer;
 }
 
 .social-media-links img{
-    cursor: pointer;
-    height: 50px;
-    width: auto;
+    display: flex;
+    gap: 15px;
+    margin: 0 auto;     
+    align-items: center;
+    order: 3;
 }
 
 .date-content p{

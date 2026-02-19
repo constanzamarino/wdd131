@@ -1,49 +1,70 @@
 
 @media screen and (min-width: 768px) {
     
-    
     #menu {
-        display: none; 
+        display: none;
     }
 
-    header {
-        padding: 0 60px;
-        display: flex;
-        justify-content: space-between;
-    }
-
+    /* Resetear el menú de navegación para vista horizontal */
     .nav-menu {
-        display: flex !important; 
+        display: flex;
         flex-direction: row;
-        position: static;
-        width: auto;
-        background-color: transparent;
+        position: static;     /* Importante: quita el absolute del móvil */
+        width: auto;          /* Quita el ancho de 200px */
+        height: auto;
         padding: 0;
+        background-color: transparent;
         gap: 20px;
     }
 
-   
-    form {
-        max-width: 700px; 
-        padding: 3rem;
+    .nav-menu a {
+        min-width: auto;      /* Quita el ancho mínimo de los botones */
+        padding: 10px 20px;
     }
 
-    
-    .preferences-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
+    /* Título de la sección */
+    #destination-title {
+        font-size: 3.5rem;
+        margin: 60px 0;
+    }
+
+    /* Grid de destinos: 3 columnas */
+    .destination-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        padding: 40px 80px 80px 80px; 
+        gap: 40px;
+    }
+
+    /* Header con más espacio lateral */
+    header {
+        padding: 0 80px;
+        height: 100px;        /* Un poco más alto para desktop */
     }
 
     
     footer {
-        flex-direction: row;
+        flex-direction: row;  /* Cambia de columna a fila */
         justify-content: space-between;
-        padding: 1rem 4rem;
+        align-items: center;
+        padding: 1.5rem 80px;
     }
 
     .footer-text {
-        position: absolute;
+        position: absolute;  
         left: 50%;
         transform: translateX(-50%);
+        order: 2;
     }
+
+    .date-content {
+        order: 1;             
+        text-align: left;
+    }
+
+    .social-media-links {
+        order: 3;             
+        margin: 0;            
+    }
+    
 }
