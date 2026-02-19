@@ -1,13 +1,25 @@
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
    
-    #menu {
-        display: none;
+   
+    header {
+        padding: 0 60px;
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
     }
 
     .nav-menu {
-        display: flex;
-        flex-direction: row;
-        gap: 30px;
+        display: flex !important; 
+        flex-direction: row; 
+        position: static; 
+        width: auto;
+        background-color: transparent;
+        padding: 0;
+        gap: 20px;
+    }
+
+    #menu {
+        display: none; 
     }
 
 
@@ -18,15 +30,36 @@
 
     .destination-section {
         grid-template-columns: repeat(3, 1fr); 
-        padding: 40px 80px 80px 80px; 
+        padding: 40px 60px 80px 60px; 
         gap: 40px;
     }
 
-    header {
-        padding: 0 80px;
+    footer {
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative; 
+        padding: 20px 60px;
     }
 
-    footer {
-        padding: 1.5rem 80px;
+    .footer-text {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0; 
+    }
+
+   
+    .social-media-links {
+        margin: 0; 
+        margin-left: auto; 
+        display: flex;
+        gap: 15px; 
+    }
+
+    
+    .date-content {
+        margin: 0;
     }
 }
