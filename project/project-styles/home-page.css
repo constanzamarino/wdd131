@@ -72,52 +72,56 @@ ul{
     position: relative;
 }
 
-h2{
-    font-family: var(--title-font);
-    font-size: 2rem;
-    border-bottom: 0.5px solid grey;
-    padding-bottom: 10px;
-    color: #026499;
-}
-
-section{
+.about-us-card, 
+.destination-card {
     background-color: var(--third-color);
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    border-top: 5px solid var(--main-color);
-    border-bottom: 5px solid var(--main-color);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease;
+}
+
+.about-us-card:hover,
+.destination-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--secondary-color);
 }
 
 
-p{
-    font-family: var(--second-font);
-    font-size: 0.9rem;
-    padding-top: 10px;
-}
-
-.about-us-section {
+.about-us-card {
     position: absolute;
-    top: 55%;         
-    left: 55%;       
-    transform: translateY(-50%); 
-    max-width: 400px; 
-    background-color: rgba(241, 250, 238, 0.7); 
-    padding: 30px;
-    border-radius: var(--border-radius);
-    margin: 0; 
-
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    max-width: 500px;
+    width: 90%;
+    z-index: 10;
 }
 
 
-.recommended-section-card:hover{
-    background-color: rgba(241, 250, 238, 0.7);
-    border-top: 5px solid var(--secondary-color);
-    border-bottom: 5px solid var(--secondary-color);
+.card-content {
+    padding: 25px;
 }
 
-/*Have to add rules for the recommended section and use grid, and the array in js*/ 
+.card-content h2, 
+.card-content h3 {
+    font-family: var(--title-font);
+    color: var(--main-color);
+    margin-bottom: 15px;
+    background: none; 
+    width: auto;
+    height: auto;
+    text-align: left;
+}
+
+
+#recommended-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
 
 footer{
     background-color: var(--main-color);
