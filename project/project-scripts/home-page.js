@@ -21,12 +21,14 @@ setInterval(function(){
 const nav= document.querySelector(".nav-menu");
 const hambutton = document.querySelector("#menu");
 
-hambutton.addEventListener('click', () => {
-    nav.classList.toggle("show");
-    hambutton.classList.toggle("show");
-})
+if (hambutton) { 
+    hambutton.addEventListener('click', () => {
+        nav.classList.toggle("show");
+        hambutton.classList.toggle("show");
+    });
+}
 
-const destinations = [
+const recommendedDestinations = [
   {
     destinationName: "Breiðamerkursandur (Diamond Beach)",
     location: "Vatnajökull National Park, Austurland, Iceland",
@@ -37,7 +39,7 @@ const destinations = [
   {
     destinationName: "Salar de Uyuni",
     location: "Potosí, Daniel Campos, Bolivia",
-    destinationDescription: "The world’s largest mirror awaits you in this infinite salt desert where the sky and earth merge into an impossible horizon. During the rainy season, a thin layer of water transforms the ground into a reflective crystal that offers the most surreal photo opportunities on the planet. To visit on a budget, book a shared tour from the city of Uyuni, which typically includes transport, meals, and basic shelters. Expect to pay around $150–$200 USD for a comprehensive three-day expedition, a minimal investment for such an out-of-this-world landscape. Don't forget to pack extreme thermal clothing and high-SPF sunscreen, as both the cold and radiation are intense at 3,600 meters. It is a raw sensory experience that completely redefines what you consider natural",
+    destinationDescription: "The world’s largest mirror awaits you in this infinite salt desert where the sky and earth merge into an impossible horizon. During the rainy season, a thin layer of water transforms the ground into a reflective crystal that offers the most surreal photo opportunities on the planet. To visit on a budget, book a shared tour from the city of Uyuni, which typically includes transport, meals, and basic shelters. Expect to pay around $150–$200 USD for a comprehensive three-day expedition, a minimal investment for such an out-of-this-world landscape. Don't forget to pack extreme thermal clothing and high-SPF sunscreen, as both the cold and radiation are intense at 3,600 meters. It is a raw sensory experience that completely redefines what you consider natural.",
     imageUrl:"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/30/4e/25/a2/caption.jpg?w=1200&h=-1&s=1"
   },
 
@@ -53,16 +55,20 @@ function displayRecommended() {
     const container = document.getElementById("recommended-container");
     if (!container) return;
 
-    container.innerHTML = `
-        <figure class="destination-card" style="max-width: 400px;">
-            <img src="${recommendedDestination.imageUrl}" alt="${recommendedDestination.name}" style="width:100%; height:250px; object-fit:cover;">
-            <div class="card-content">
-                <h3>${recommendedDestination.name}</h3>
-                <p><strong>📍</strong> ${recommendedDestination.location}</p>
-                <p>${recommendedDestination.description}</p>
-            </div>
-        </figure>
-    `;
+    container.innerHTML = ""; 
+
+    recommendedDestinations.forEach(rec => { 
+        container.innerHTML += `
+            <figure class="destination-card">
+                <img src="${rec.imageUrl}" alt="${rec.destinationName}" style="width:100%; height:200px; object-fit:cover;">
+                <div class="card-content">
+                    <h3>${rec.destinationName}</h3>
+                    <p><strong>📍</strong> ${rec.location}</p>
+                    <p>${rec.destinationDescription}</p>
+                </div>
+            </figure>
+        `;
+    });
 }
 
 document.addEventListener("DOMContentLoaded", displayRecommended);

@@ -1,0 +1,48 @@
+@media screen and (min-width: 768px) {
+   
+    header {
+        padding: 0 60px;
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+    }
+
+    .nav-menu {
+        display: flex !important; 
+        flex-direction: row; 
+        position: static; 
+        width: auto;
+        background-color: transparent;
+        padding: 0;
+        gap: 20px;
+    }
+
+    #menu {
+        display: none; 
+    }
+
+    #recommended-container {
+        flex-direction: row; 
+        justify-content: center;
+        flex-wrap: wrap; 
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .destination-card {
+        flex: 1; 
+        max-width: 350px; 
+    }
+
+    
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-text {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
