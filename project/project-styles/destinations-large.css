@@ -35,31 +35,28 @@
     }
 
     footer {
-        display: flex; 
         flex-direction: row;
-        justify-content: space-between;
         align-items: center;
         position: relative; 
-        padding: 20px 60px;
     }
 
     .footer-text {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        margin: 0; 
+        width: 100%; 
+        pointer-events: none; 
     }
 
-   
-    .social-media-links {
-        margin: 0; 
-        margin-left: auto; 
-        display: flex;
-        gap: 15px; 
-    }
-
-    
     .date-content {
-        margin: 0;
+        margin-right: auto; 
     }
-}
+
+    .social-media-links {
+        margin: 0;
+        margin-left: auto; 
+        position: relative;
+        z-index: 10; 
+    }
+    
+    }  

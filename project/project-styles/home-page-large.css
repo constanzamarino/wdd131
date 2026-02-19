@@ -51,12 +51,26 @@
     
     footer {
         flex-direction: row;
-        justify-content: space-between;
+        align-items: center;
+        position: relative; 
     }
 
     .footer-text {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
+        width: 100%; 
+        pointer-events: none; 
+    }
+
+    .date-content {
+        margin-right: auto; 
+    }
+
+    .social-media-links {
+        margin: 0;
+        margin-left: auto; 
+        position: relative;
+        z-index: 10; 
     }
 }
