@@ -53,12 +53,13 @@ ul{
     font-family: var(--title-font);
     font-size: 1.15rem;
     font-weight: 500;
-
+    transition: transform 0.2s, background-color 0.3s;
 }
 
 .nav-menu a:hover {
     background-color: var(--third-color);
     color: black;
+    transform: translateY(-5px);
 }
 
 .hero-image-container img{
@@ -89,6 +90,7 @@ section{
     border-bottom: 5px solid var(--main-color);
 }
 
+
 p{
     font-family: var(--second-font);
     font-size: 0.9rem;
@@ -108,14 +110,6 @@ p{
 
 }
 
-#destination-rec-title:hover{
-    background-color: var(--secondary-color);
-    color: var(--third-color);
-    width: 200px;
-    height: 40px;
-    padding-left: 10px;
-    border-radius:var(--border-radius) ;
-}
 
 .recommended-section-card:hover{
     background-color: rgba(241, 250, 238, 0.7);
