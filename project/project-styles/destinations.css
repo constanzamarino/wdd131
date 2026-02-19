@@ -68,12 +68,14 @@ ul{
     font-family: var(--title-font);
     font-size: 1.15rem;
     font-weight: 500;
+    transition: transform 0.2s, background-color 0.3s;
 
 }
 
 .nav-menu a:hover {
     background-color: var(--third-color);
     color: black;
+    transform: translateY(-5px);
 }
 
 #destination-title {
