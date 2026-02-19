@@ -61,6 +61,69 @@ ul{
     color: black;
 }
 
+#destination-title {
+    text-align: center;
+    margin: 40px 0;
+    color: var(--main-color);
+    font-family: var(--title-font);
+    font-size: 3rem;
+}
+
+.destination-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 0 60px 60px 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.destination-card {
+    background-color: var(--third-color);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    border: 1px solid #ddd;
+}
+
+.destination-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--secondary-color);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.destination-card h3 {
+    font-family: var(--title-font);
+    color: var(--main-color);
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.destination-card .location {
+    font-family: var(--second-font);
+    color: var(--secondary-color);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.destination-card .description {
+    font-family: var(--second-font);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+
 footer{
     background-color: var(--main-color);
     color: var(--third-color);
