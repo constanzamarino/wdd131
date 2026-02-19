@@ -138,6 +138,12 @@ ul{
     text-align: left;
 }
 
+.card-content p{
+    font-family: var(--second-font);
+    line-height: 1.6;
+    color: #333;
+    font-size: 0.95rem;
+}
 
 #recommended-container {
     display: flex;
