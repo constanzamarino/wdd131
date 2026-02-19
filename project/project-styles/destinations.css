@@ -33,12 +33,27 @@ header{
 }
 
 .nav-menu{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 25px;
-    height: 70px;
+    display: none; 
+    flex-direction: column; 
+    width: 100%;
+    text-align: center;
+    gap: 15px;
+    padding-bottom: 20px;
 }
+
+.nav-menu.show {
+    display: flex; 
+}
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
 ul{
     list-style: none;
 }

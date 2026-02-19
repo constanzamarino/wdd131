@@ -1,0 +1,32 @@
+@media (min-width: 768px) {
+   
+    #menu {
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+
+    #destination-title {
+        font-size: 3.5rem;
+        margin: 60px 0;
+    }
+
+    .destination-section {
+        grid-template-columns: repeat(3, 1fr); 
+        padding: 40px 80px 80px 80px; 
+        gap: 40px;
+    }
+
+    header {
+        padding: 0 80px;
+    }
+
+    footer {
+        padding: 1.5rem 80px;
+    }
+}
