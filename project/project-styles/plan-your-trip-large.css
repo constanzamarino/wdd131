@@ -1,0 +1,49 @@
+
+@media screen and (min-width: 768px) {
+    
+    
+    #menu {
+        display: none; 
+    }
+
+    header {
+        padding: 0 60px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-menu {
+        display: flex !important; 
+        flex-direction: row;
+        position: static;
+        width: auto;
+        background-color: transparent;
+        padding: 0;
+        gap: 20px;
+    }
+
+   
+    form {
+        max-width: 700px; 
+        padding: 3rem;
+    }
+
+    
+    .preferences-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem 4rem;
+    }
+
+    .footer-text {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
