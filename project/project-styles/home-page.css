@@ -203,7 +203,8 @@ footer p{
 .social-media-links{
     display: flex;
     gap: 5px;
-    margin-left: auto;
+    margin: 10px auto;
+    justify-content: center;
     align-items: center;
 }
 
