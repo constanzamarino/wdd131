@@ -58,15 +58,16 @@ header{
 .nav-menu {
     display: none; 
     flex-direction: column; 
-    justify-content: center;
-    gap: 15px;
+    align-items: flex-end;
+    gap: 10px;
     height: auto;
-    width: 100%;
+    width: 200px;
     position: absolute; 
     top: 100%; 
-    left: 0;
+    right: 0;
+    left: auto;
     background-color: var(--main-color);
-    padding: 20px 0;
+    padding: 20px 15px;
     z-index: 999; 
 }
 
