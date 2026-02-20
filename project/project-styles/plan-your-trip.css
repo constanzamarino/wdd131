@@ -41,7 +41,9 @@ header{
     color: var(--third-color);
     justify-content: space-between;
     align-items: center;
-    padding: 0 60px;
+    padding: 0 20px;
+    position: relative;
+    height: 80px;
 
 }
 
@@ -245,9 +247,11 @@ footer{
     background-color: var(--main-color);
     color: var(--third-color);
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 1rem;
+    gap: 10px;
+    padding: 20px;
     position: relative;
    
 
@@ -264,15 +268,15 @@ footer p{
 .social-media-links{
     display: flex;
     gap: 5px;
-    margin-left: auto;
+    margin: 10px auto;
+    justify-content: center;
     align-items: center;
 }
 
 
 .footer-text{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    position: static;
+    transform: none;
     text-align: center;
 }
 
