@@ -56,7 +56,6 @@ header{
     cursor: pointer;
 }
 
-
 .nav-menu {
     display: none; 
     flex-direction: column; 
@@ -81,8 +80,16 @@ ul{
     list-style: none;
 }
 
+.nav-menu li {
+    width: 100%;         
+}
+
 .nav-menu a {
-    padding: 15px 10px;
+    display: block;
+    text-align: center;
+    min-width: 150px;
+    padding: 12px;
+    margin-bottom: 5px;
     color: var(--third-color);
     text-decoration: none;
     cursor: pointer;
@@ -92,7 +99,6 @@ ul{
     font-size: 1.15rem;
     font-weight: 500;
     transition: transform 0.2s, background-color 0.3s;
-
 }
 
 .nav-menu a:hover {
@@ -230,31 +236,22 @@ input[type="submit"]:hover {
     transform: translateY(-3px);
 }
 
-
-.social-media-links {
+footer {
     display: flex;
-    gap: 15px;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.social-media-links a {
-    display: flex;
-    align-items: center;
-}
-
-footer{
-    background-color: var(--main-color);
-    color: var(--third-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column; 
     gap: 10px;
     padding: 20px;
-    position: relative;
-   
+    text-align: center;
+    background-color: var(--main-color);
+    color: var(--third-color);
+    justify-content: space-between;
+    align-items: center;
+}
 
+.footer-text {
+    position: static; 
+    transform: none;
+    text-align: center;
 }
 
 footer p{
@@ -264,20 +261,12 @@ footer p{
     text-align: center;
 }
 
-
 .social-media-links{
     display: flex;
     gap: 5px;
     margin: 10px auto;
     justify-content: center;
     align-items: center;
-}
-
-
-.footer-text{
-    position: static;
-    transform: none;
-    text-align: center;
 }
 
 .social-media-links img{
