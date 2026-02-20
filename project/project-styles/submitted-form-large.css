@@ -1,0 +1,45 @@
+@media (min-width: 768px) {
+    #menu {
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        position: static; 
+        width: auto;      
+        padding: 0;       
+    }
+
+    header {
+        padding: 0 80px;
+    }
+
+
+    footer {
+        flex-direction: row;
+        align-items: center;
+        position: relative; 
+    }
+
+    .footer-text {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: auto;
+    }
+
+    .date-content {
+        margin-right: auto; 
+    }
+
+    .social-media-links {
+        margin: 0;
+        margin-left: auto; 
+    }
+
+    .thank-you-card {
+        padding: 4rem;
+    }
+}

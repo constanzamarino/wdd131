@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --title-font: 'Roboto Condensed', sans-serif;
+    --second-font: 'Open Sans', sans-serif;
+    --border-radius: 6px;
+    --main-color: #0077b6;
+    --secondary-color: #f5761b; 
+    --third-color: #f1faee;
+}
+
+h1{
+    font-family: var(--title-font);
+    font-size: 2.5rem;
+}
+
+.logo-box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+header {
+    display: flex;
+    background-color: var(--main-color);
+    color: var(--third-color);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: relative; 
+    height: 80px;
+}
+
+
+#menu {
+    display: block; 
+    font-size: 2rem;
+    color: var(--third-color);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+.nav-menu {
+    display: none; 
+    flex-direction: column; 
+    align-items: flex-end;
+    gap: 10px;
+    height: auto;
+    width: 200px;
+    position: absolute; 
+    top: 100%; 
+    right: 0;
+    left: auto;
+    background-color: var(--main-color);
+    padding: 20px 15px;
+    z-index: 999; 
+}
+
+.nav-menu.show {
+    display: flex;
+}
+
+ul{
+    list-style: none;
+}
+
+.nav-menu li {
+    width: 100%;         
+}
+
+.nav-menu a {
+    display: block;
+    text-align: center;
+    min-width: 150px;
+    padding: 12px;
+    margin-bottom: 5px;
+    color: var(--third-color);
+    text-decoration: none;
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius);
+    font-family: var(--title-font);
+    font-size: 1.15rem;
+    font-weight: 500;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.nav-menu a:hover {
+    background-color: var(--third-color);
+    color: black;
+    transform: translateY(-5px);
+}
+
+
+
+.hero-image-container {
+    position: relative;
+    width: 100%;
+    min-height: 80vh; 
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+}
+
+.hero-image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.thank-you-card {
+    position: relative;
+    z-index: 10;
+    background-color: rgba(241, 250, 238, 0.9);
+    padding: 3rem;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 85%;
+    text-align: center;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.2);
+    backdrop-filter: blur(8px);
+}
+
+.thank-you-card h2 {
+    font-family: var(--title-font);
+    color: var(--main-color);
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.success-msg {
+    font-family: var(--second-font);
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.next-steps {
+    text-align: left;
+    background: white;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    margin-bottom: 25px;
+    border-left: 5px solid var(--secondary-color);
+}
+
+.next-steps h3 {
+    font-family: var(--title-font);
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.next-steps ul {
+    list-style: disc;
+    padding-left: 20px;
+    font-family: var(--second-font);
+}
+
+.next-steps li {
+    margin-bottom: 8px;
+}
+
+.back-btn {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--third-color);
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    font-family: var(--title-font);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background-color: var(--main-color);
+    transform: scale(1.05);
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--main-color);
+    color: var(--third-color);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-text {
+    position: static; 
+    transform: none;
+    text-align: center;
+}
+
+footer p{
+    font-size: 1.05rem;
+    font-family: var(--second-font);
+    font-weight: 500;
+    text-align: center;
+}
+
+
+.social-media-links{
+    display: flex;
+    gap: 5px;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.social-media-links img{
+    cursor: pointer;
+    height: 50px;
+    width: auto;
+}
+
+.date-content p{
+    font-family: var(--second-font);
+    font-size: 1.05rem;
+}
