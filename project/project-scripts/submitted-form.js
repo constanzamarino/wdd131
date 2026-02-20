@@ -27,3 +27,51 @@ if (hambutton) {
         hambutton.classList.toggle("show");
     });
 }
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.querySelector("form");
+    const displayContainer = document.querySelector(".next-steps");
+
+    
+    if (form) {
+        form.addEventListener("submit", () => {
+            const tripData = {
+                type: document.getElementById("trip-type").value,
+                budget: document.getElementById("budget").value,
+                date: document.getElementById("trip-date").value,
+                email: document.getElementById("user-email").value
+            };
+            
+            localStorage.setItem("userTripPlan", JSON.stringify(tripData));
+        });
+    }
+
+  
+    if (displayContainer) {
+        const savedData = JSON.parse(localStorage.getItem("userTripPlan"));
+
+        if (savedData) {
+           
+            const summaryDiv = document.createElement("div");
+            summaryDiv.style.marginTop = "20px";
+            summaryDiv.style.borderTop = "1px solid #ccc";
+            summaryDiv.style.paddingTop = "15px";
+            
+            summaryDiv.innerHTML = `
+                <p><strong>Your Plan Summary:</strong></p>
+                <ul style="list-style: none; padding: 0;">
+                    <li>🌍 Experience: ${savedData.type}</li>
+                    <li>💰 Budget: $${savedData.budget} USD</li>
+                    <li>📅 Date: ${savedData.date}</li>
+                    <li>📧 Contact: ${savedData.email}</li>
+                </ul>
+            `;
+            displayContainer.appendChild(summaryDiv);
+        }
+    }
+    
+    
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
+});
