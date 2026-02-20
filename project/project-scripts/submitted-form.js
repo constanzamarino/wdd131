@@ -1,90 +1,72 @@
 document.addEventListener("DOMContentLoaded", () => {
     
-    const menuButton = document.querySelector("#menu");
-    const navMenu = document.querySelector(".nav-menu");
+    const timeSpan = document.querySelector("#currentTime");
+    if (timeSpan) { 
+        const updateClock = () => {
+            timeSpan.textContent = new Date().toLocaleTimeString();
+        };
+        updateClock();
+        setInterval(updateClock, 1000);
+    }
+
+    
     const yearSpan = document.querySelector("#currentYear");
     const lastModSpan = document.querySelector("#lastModified");
-    const timeSpan = document.querySelector("#currentTime");
-    const form = document.querySelector("form");
-    const displayContainer = document.querySelector(".next-steps");
 
-    
-    if (menuButton && navMenu) {
-        menuButton.addEventListener("click", () => {
-            navMenu.classList.toggle("show");
-        });
-    }
+    if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+    if (lastModSpan) lastModSpan.textContent = "Last Modified: " + document.lastModified;
 
-    
-    let visitCount = Number(localStorage.getItem("visitCount")) || 0;
-    visitCount++; 
-    localStorage.setItem("visitCount", visitCount);
+   
+    let visits = Number(localStorage.getItem("visitCount")) || 0;
+    visits++;
+    localStorage.setItem("visitCount", visits);
 
-    
-    const welcomeContainer = document.querySelector("header");
-    if (welcomeContainer) {
-        const welcomeMsg = document.createElement("span");
-        welcomeMsg.style.fontSize = "0.8rem";
-        welcomeMsg.style.padding = "5px";
-        welcomeMsg.style.color = "var(--third-color)";
-        
-        if (visitCount === 1) {
-            welcomeMsg.textContent = " ¡Welcome on your first visit!";
-        } else {
-            welcomeMsg.textContent = ` ¡Welcome back! Visit #${visitCount}`;
-        }
-        welcomeContainer.appendChild(welcomeMsg);
-    }
-
-    
-    if (yearSpan) {
-        yearSpan.textContent = new Date().getFullYear();
-    }
-
-    if (lastModSpan) {
-        lastModSpan.textContent = "Last Modified: " + document.lastModified;
-    }
-
-    if (timeSpan) {
-        const updateTime = () => {
-            const now = new Date();
-            timeSpan.textContent = now.toLocaleTimeString();
-        };
-        updateTime(); 
-        setInterval(updateTime, 1000); 
-    }
-
-    
-    if (form) {
-        form.addEventListener("submit", (e) => {
-            const tripData = {
-                type: document.getElementById("trip-type").value,
-                budget: document.getElementById("budget").value,
-                date: document.getElementById("trip-date").value,
-                email: document.getElementById("user-email").value
-            };
-            localStorage.setItem("userTripPlan", JSON.stringify(tripData));
-        });
+    const footerText = document.querySelector(".footer-text");
+    if (footerText) {
+        const visitDisplay = document.createElement("p");
+        visitDisplay.style.fontSize = "0.85rem";
+        visitDisplay.textContent = `Site Visits: ${visits}`;
+        footerText.appendChild(visitDisplay);
     }
 
   
-    if (displayContainer) {
-        const savedData = JSON.parse(localStorage.getItem("userTripPlan"));
-        if (savedData) {
-            const summaryDiv = document.createElement("div");
-            summaryDiv.style.marginTop = "20px";
-            summaryDiv.style.padding = "15px";
-            summaryDiv.style.backgroundColor = "white";
-            summaryDiv.style.borderRadius = "8px";
+    const menuBtn = document.querySelector("#menu");
+    const navMenu = document.querySelector(".nav-menu");
+    if (menuBtn && navMenu) {
+        menuBtn.onclick = () => navMenu.classList.toggle("show");
+    }
+
+
+    const form = document.querySelector("form");
+    if (form) {
+        form.onsubmit = () => {
+            const data = {
+                type: document.getElementById("trip-type")?.value,
+                budget: document.getElementById("budget")?.value,
+                date: document.getElementById("trip-date")?.value,
+                email: document.getElementById("user-email")?.value
+            };
+            localStorage.setItem("userTripPlan", JSON.stringify(data));
+        };
+    }
+
+    
+    const display = document.querySelector(".next-steps");
+    if (display) {
+        const saved = JSON.parse(localStorage.getItem("userTripPlan"));
+        if (saved) {
+            const summary = document.createElement("div");
+            summary.style.marginTop = "20px";
+            summary.style.padding = "10px";
+            summary.style.borderLeft = "4px solid var(--secondary-color)";
+            summary.style.background = "rgba(255,255,255,0.5)";
             
-            summaryDiv.innerHTML = `
-                <h4 style="color: #0077b6; margin-bottom: 10px;">Review your trip:</h4>
-                <p><strong>Style:</strong> ${savedData.type}</p>
-                <p><strong>Budget:</strong> $${savedData.budget} USD</p>
-                <p><strong>Planned Date:</strong> ${savedData.date}</p>
-                <p><strong>Confirmation sent to:</strong> ${savedData.email}</p>
+            summary.innerHTML = `
+                <p><strong>Review:</strong> ${saved.type} trip</p>
+                <p><strong>Budget:</strong> $${saved.budget} USD</p>
+                <p><strong>Date:</strong> ${saved.date}</p>
             `;
-            displayContainer.appendChild(summaryDiv);
+            display.appendChild(summary);
         }
     }
 });
